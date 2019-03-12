@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "chilicklic@mail.ru";
+$recepient = " "; // почта получателя писм с формы
 $siteName = "MrBurger";
 
 $name = trim($_POST["name"]); // Имя
