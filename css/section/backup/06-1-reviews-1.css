@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Секция 6 - Отзывы */
+/* Секция 6 - Отзывы - Первая четверка */
+.reviews-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews-1__item {
+  width: 25%;
+  position: relative;
+  height: 560px; }
+
+.reviews-1__item img {
+  width: 100%;
+  height: auto; }
+
+.reviews-1__item--hover {
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  height: 560px;
+  position: relative;
+  bottom: 580px;
+  background-color: #515151;
+  opacity: 0; }
+
+.reviews-1__item--hover:hover {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0.5; }
+
+.reviews-1__item--hover p:first-child {
+  font-family: Ubuntu-Medium;
+  font-size: 14px;
+  position: relative;
+  top: 100px;
+  left: 30px; }
+
+.reviews-1__item--hover p:nth-child(2) {
+  font-family: Ubuntu-light;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  top: 105px;
+  left: 30px; }
+
+.reviews-1__item--hover button:nth-child(3) {
+  cursor: pointer;
+  font-family: Ubuntu-Medium;
+  width: 110px;
+  height: 34px;
+  color: white;
+  background-color: #000000;
+  border: 0;
+  opacity: 0.4;
+  border-radius: 5px;
+  font-size: 13px;
+  position: relative;
+  top: 100px;
+  left: 30px; }
+
+.reviews-1__item--hover button:nth-child(3):hover {
+  opacity: 1;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }

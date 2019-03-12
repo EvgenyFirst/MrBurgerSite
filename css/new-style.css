@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*. Пагинатор */
+.pagin {
+  position: fixed;
+  width: 16px;
+  height: 170px; }
+
+.pagin__item {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative; }
+  .pagin__item:last-child {
+    margin-bottom: 0; }
+  .pagin__item:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  .pagin__item--active:before {
+    opacity: 1;
+    width: 18px;
+    height: 18px; }
+  .pagin__item:hover:before {
+    opacity: 1;
+    width: 18px;
+    height: 18px; }

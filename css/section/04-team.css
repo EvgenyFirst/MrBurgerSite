@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* Секция 4 - Команда */
+.team-sect {
+  position: relative;
+  background: url("../img/bg-team.jpg");
+  padding: 0;
+  height: 100vh;
+  min-height: rem(650px);
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .team-sect {
+      height: 123.5vh; } }
+  @media screen and (max-width: 480px) {
+    .team-sect {
+      height: 812px; } }
+
+.team__container {
+  position: absolute;
+  background: rgba(51, 51, 51, 0.93);
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .team__container {
+      width: 100%;
+      text-align: center; } }
+
+.section--title {
+  width: rem(415px);
+  height: rem(86px);
+  margin-top: rem(250px);
+  margin-left: rem(200px);
+  margin-bottom: rem(2px);
+  font-size: rem(72.04px);
+  font-family: Gagalin, Arial, sans-serif;
+  font-weight: 400;
+  color: #f9b43b;
+  text-shadow: none; }
+  @media screen and (max-width: 768px) {
+    .section--title {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      top: 16px;
+      left: -176px; } }
+  @media screen and (max-width: 480px) {
+    .section--title {
+      position: relative;
+      width: 99%;
+      text-align: center;
+      top: -48px;
+      left: -157px; } }
+
+@media screen and (max-width: 480px) {
+  .sect-4__block {
+    position: relative;
+    left: -37px; } }
+
+.acco {
+  width: rem(367px);
+  list-style: none; }
+  @media screen and (max-width: 768px) {
+    .acco {
+      position: relative;
+      width: 53%;
+      top: 10px;
+      left: -41px; } }
+  @media screen and (max-width: 480px) {
+    .acco {
+      top: -81px;
+      left: 17px; } }
+
+.acco__item {
+  width: rem(406px);
+  margin-left: rem(115px); }
+  @media screen and (max-width: 768px) {
+    .acco__item {
+      position: relative;
+      width: 414px;
+      left: 297px; } }
+
+.acco__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: rem(10px);
+  padding-top: rem(20px);
+  padding-left: rem(37px);
+  font-size: rem(14.01px);
+  font-family: Gagalin, Arial, sans-serif;
+  font-weight: 400;
+  text-shadow: none; }
+  .acco__trigger:hover {
+    color: #f9b43b; }
+
+.acco__trigger:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-right: rem(10px);
+  border: rem(9px) solid transparent;
+  border-top-color: #f9b43b;
+  border-bottom-width: 0; }
+
+.acco__item_active
+.acco__trigger {
+  color: #f9b43b;
+  cursor: pointer; }
+
+.acco__item_active .acco__trigger:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.acco__item_active .acco__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.acco__trigger {
+  color: white; }
+
+.acco__content {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .acco__content {
+      margin-left: -28px; } }
+
+.acco__pic {
+  width: 25%;
+  height: 50%;
+  margin-top: rem(17px);
+  margin-left: rem(60px);
+  border-radius: 50%;
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .acco__pic {
+      width: 22%;
+      margin-left: 80px; } }
+  @media screen and (max-width: 480px) {
+    .acco__pic {
+      position: relative;
+      left: -9px; } }
+
+.acco__desc {
+  color: #fff;
+  margin-left: rem(20px); }
+  @media screen and (max-width: 768px) {
+    .acco__desc {
+      position: relative;
+      margin-top: 112px;
+      margin-left: -91px; } }
+
+.acco_desc-title {
+  position: absolute;
+  font-weight: bold;
+  margin-top: rem(17px);
+  margin-left: rem(10px);
+  font-size: rem(14.01px);
+  font-family: Ubuntu, Arial, sans-serif;
+  text-shadow: none;
+  line-height: 1.5; }
+  @media screen and (max-width: 768px) {
+    .acco_desc-title {
+      position: relative; } }
+  @media screen and (max-width: 480px) {
+    .acco_desc-title {
+      left: -4px; } }
+
+.acco_desc-text p {
+  position: absolute;
+  margin-top: rem(65px);
+  margin-left: rem(10px);
+  font-size: rem(14.01px);
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 400;
+  text-shadow: none;
+  line-height: 1.5; }
+  @media screen and (max-width: 768px) {
+    .acco_desc-text p {
+      position: relative;
+      margin-top: 162px;
+      margin-left: -121px; } }
+  @media screen and (max-width: 480px) {
+    .acco_desc-text p {
+      width: 187px;
+      left: -2px; } }
+
+/* ------------------------------------------------------------ */

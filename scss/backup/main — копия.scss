@@ -1,0 +1,27 @@
+// config
+@import "config/01-fonts.scss";
+@import "config/02-config.scss";
+@import "config/03-media.scss";
+
+// section
+@import "section/paginator.scss";
+@import "section/01-we-do-it.scss";
+@import "section/02-we-best.scss";
+@import "section/03-burgers.scss";
+@import "section/04-team.scss";
+@import "section/05-menu.scss";
+@import "section/06-reviews.scss";
+@import "section/07-delivery.scss";
+@import "section/08-contacts.scss";
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+       @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+       @content;
+    }
+}

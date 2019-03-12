@@ -1,0 +1,48 @@
+/*. Пагинатор */
+.pagin {
+    position: fixed;
+    
+    width: 16px;
+    height: 170px;
+}
+.pagin__item {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:before {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        border: 1px solid white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .2s;
+    }
+    &--active {
+        &:before {
+            opacity: 1;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+            width: 18px;
+            height: 18px;
+        }
+    }
+} 

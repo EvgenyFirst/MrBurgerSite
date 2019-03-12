@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* Секция 5 - Меню */
+.menu {
+  position: relative;
+  background: url("../img/bg-menu.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: rem(-16px); }
+  @media screen and (max-width: 768px) {
+    .menu {
+      height: 1024px; } }
+  @media screen and (max-width: 480px) {
+    .menu {
+      height: 802px; } }
+
+.menu__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff; }
+  @media screen and (max-width: 768px) {
+    .menu__wrap {
+      position: relative;
+      height: 1024px;
+      left: 0px; } }
+
+.title--menu {
+  margin-top: rem(143px);
+  margin-left: rem(159px);
+  font-weight: 400;
+  color: white;
+  font-size: rem(72px);
+  font-family: "Gagalin", Arial, sans-serif; }
+  @media screen and (max-width: 768px) {
+    .title--menu {
+      position: relative;
+      left: 0px; } }
+  @media screen and (max-width: 480px) {
+    .title--menu {
+      left: 0px; } }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .menu__list {
+      z-index: 2;
+      width: 92%;
+      margin-left: 37px; } }
+  @media screen and (max-width: 480px) {
+    .menu__list {
+      position: relative;
+      width: 452px;
+      height: 798px; } }
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: rem(71px);
+  margin-right: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  @media screen and (max-width: 480px) {
+    .menu__item {
+      width: 103px; } }
+
+.menu__name {
+  position: relative;
+  padding: 0 rem(25px);
+  padding-top: rem(32px);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-align: left;
+  font-family: "Gagalin", Arial, sans-serif;
+  letter-spacing: rem(2px);
+  font-size: rem(40px);
+  cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .menu__name {
+      height: 992px; } }
+  @media screen and (max-width: 480px) {
+    .menu__name {
+      height: 773px; } }
+
+.menu__item--1 .menu__name {
+  background: url("../img/acco-11.jpg") center no-repeat;
+  background-size: cover; }
+
+.menu__item--2 .menu__name {
+  background: url("../img/acco-21.jpg") center no-repeat;
+  background-size: cover; }
+
+.menu__item--3 .menu__name {
+  background: url("../img/acco-31.jpg") center no-repeat;
+  background-size: cover; }
+
+.menu__info {
+  width: 60.7vh;
+  height: 103.7vh;
+  background: rgba(51, 51, 51, 0);
+  margin-top: -rem(16px); }
+  @media screen and (max-width: 768px) {
+    .menu__info {
+      height: 134.5vh;
+      width: 516px; } }
+  @media screen and (max-width: 480px) {
+    .menu__info {
+      height: 811px;
+      width: 263px; } }
+
+.menu-acco__item_active
+.menu__name {
+  color: #f9b43b; }
+
+.menu-acco__item_active
+.menu__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-acco__item_active {
+  /*
+    padding-right: rem(592px);
+    width: 608px;
+  */
+  width: 580px; }
+  @media screen and (max-width: 768px) {
+    .menu-acco__item_active {
+      width: 544px; } }
+  @media screen and (max-width: 480px) {
+    .menu-acco__item_active {
+      width: 525px; } }
+
+.menu__text {
+  width: 29.8rem;
+  max-width: rem(540px);
+  background: rgba(47, 50, 52, 0.9);
+  margin-top: 0;
+  padding: 4.0625rem 2.1875rem 0;
+  font-size: rem(14px);
+  line-height: rem(24px); }
+  @media screen and (max-width: 480px) {
+    .menu__text {
+      width: 207px; } }
+
+/* ------------------------------------------------------------ */

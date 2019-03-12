@@ -1,0 +1,243 @@
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+/* -------------------------------- */
+/* Секция 7 - Заказать доставку */
+/* -------------------------------- */
+
+.wrap {
+
+//@media screen and (max-height: 640px) {
+//  position: absolute;
+//  top: -23px;
+//}
+
+  @media screen and (max-width: 768px) {
+    margin-top: 65px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+  }
+
+}
+
+.order {
+  background: url(../img/bg-delivery.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 5.625rem;
+  height: 100vh;
+  min-height: 650px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+.order__title {
+  text-align: center;
+  margin-bottom: 5.625rem;
+  color: #f9b43b;
+  font-size: 73px;
+  font-family: "Gagalin", Arial, sans-serif;
+
+  @media screen and (max-width: 768px) {
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: -5%;
+  }
+  @media screen and (max-width: 342px) {
+    font-size: 65px;
+  }
+
+}
+
+.order__form {
+  display: flex;
+  padding-left: 5px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.order__section {
+  width: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+
+}
+
+.order__row {
+  display: flex;
+}
+
+.order__row-mob {
+
+  @media screen and (max-width: 342px) {
+    position: absolute;
+    padding-top: 8%;
+  }
+
+}
+
+.order__label {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "UbuntuLight", Arial, sans-serif;
+}
+
+.order__block {
+  flex: auto;
+  margin-bottom: 20px;
+  margin-right: 1px;
+}
+
+.order__block--small {
+  width: auto;
+  flex: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.order__block--small .order__label {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.order__input {
+  width: calc(100% - 20px);
+  height: 35px;
+  border-radius: 5px;
+}
+
+.order__textarea {
+  height: 109px;
+  width: 88%;
+  border-radius: 5px;
+  padding: 15px;
+
+//@media screen and (max-height: 640px) {
+//  height: 13px;
+//}
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+}
+
+.order__input--radio ~ .order__label,
+.order__input--checkbox ~ .order__label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.order__input--radio ~ .order__label:before,
+.order__input--checkbox ~ .order__label:before,
+.order__input--radio ~ .order__label:after,
+.order__input--checkbox ~ .order__label:after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.order__input--radio ~ .order__label:after,
+.order__input--checkbox ~ .order__label:after {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.order__input--radio ~ .order__label:before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  left: 0;
+  top: -1px;
+}
+
+.order__input--radio ~ .order__label:after {
+  width: 8px;
+  height: 8px;
+  background: #e45028;
+  border-radius: 50%;
+  left: 3.5px;
+  top: 2.5px;
+}
+
+.order__input--checkbox ~ .order__label:before {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  left: 0;
+  top: -2px;
+}
+
+.order__input--checkbox ~ .order__label:after {
+  width: 11px;
+  height: 11px;
+  background: url("../img/checkbox.png") center no-repeat;
+  background-size: cover;
+  left: 3.5px;
+  top: 1.5px;
+}
+
+.order__input--radio:checked ~ .order__label:after,
+.order__input--checkbox:checked ~ .order__label:after {
+  opacity: 1;
+}
+
+.order__btn--reset {
+  background: none;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "UbuntuLight", Arial, sans-serif;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-left: -10px;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.btn-order-deliv {
+  width: 97px;
+  height: 35px;
+  margin-top: 4px;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+  background-color: #e45028;
+  border: 0px;
+  font-size: 13px;
+  cursor: pointer;
+
+  
+// @media screen and (max-height: 640px) {
+//  position: relative;
+//  top: -69px;
+//  right: -158px;
+// }
+
+}
+
+.btn-order-delivr:hover {
+  background-color: #c1401e;
+  transition: 1s;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+
+
+

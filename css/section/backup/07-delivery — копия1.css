@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* -------------------------------- */
+/* Секция 7 - Закажите доставку */
+/* -------------------------------- */
+.delivery-sect {
+  background: url(../img/bg-delivery.jpg) no-repeat 50%;
+  background-color: black;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  min-height: 650px;
+  margin-right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* Заголовок */
+.title--delivery {
+  position: relative;
+  height: 150px;
+  margin-top: -16px;
+  margin-left: 16px;
+  top: 163px;
+  font-weight: 400;
+  color: #f9b43b;
+  font-size: 73px;
+  font-family: Gagalin, Arial, sans-serif;
+  text-align: center; }
+
+/* // Заголовок */
+/* Форма */
+.deliv-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57%;
+  margin-left: 421;
+  margin-top: -247px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.deliv-form__left,
+.deliv-form__right {
+  width: 48%;
+  min-height: 12.5rem; }
+
+.deliv-form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.deliv-group {
+  position: relative;
+  margin-bottom: 19px;
+  width: 100%;
+  top: -1px;
+  left: 1px; }
+
+.deliv-group--name-phone {
+  max-width: 241px; }
+
+.deliv-group--corp {
+  max-width: 100px; }
+
+.deliv-group {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.deliv-group-title {
+  font-size: 14px;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 300; }
+
+.deliv-group-title--radio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.deliv-group-title--radio:before {
+  display: block;
+  content: "";
+  margin-right: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.checkbox,
+.radio {
+  display: none; }
+
+.radio:checked + .deliv-group-title--radio:before {
+  background: url(../img/radio.png) no-repeat 50%; }
+
+.deliv-group-title--checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+
+.deliv-group-title--checkbox:before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 13px;
+  background-color: #fff; }
+
+.checkbox:checked + .deliv-group-title--checkbox:before {
+  background: #fff url(../img/checkbox.png) no-repeat 50%; }
+
+.deliv-group__input {
+  width: 76%;
+  height: 32px;
+  padding-left: 19px;
+  border: 2px solid #d1cfcb;
+  border-radius: 5px; }
+
+.deliv-group__input:focus {
+  border: 2px solid #f9b43b; }
+
+.deliv-group__text {
+  width: 100%;
+  height: 105px;
+  padding: 1px 16px 20px;
+  border: 2px solid #d1cfcb;
+  border-radius: 0.3125rem; }
+
+.deliv-group__text:focus {
+  border: 1px solid #f9b43b; }
+
+.group-check {
+  margin-bottom: 8px; }
+
+.deliv-name {
+  position: relative;
+  top: -1px;
+  left: 51px; }
+
+.deliv-name-input {
+  position: relative;
+  width: 197px;
+  top: -8px;
+  left: 52px; }
+
+.deliv-title {
+  position: relative;
+  top: -10px;
+  left: 19px; }
+
+.deliv-title-input {
+  position: relative;
+  width: 197px;
+  top: -8px;
+  left: 2px; }
+
+.deliv-street {
+  position: relative;
+  top: -16px;
+  left: 51px; }
+
+.deliv-street-input {
+  position: relative;
+  width: 438px;
+  top: 19px;
+  left: 4px; }
+
+.deliv-home {
+  position: relative;
+  top: 10px;
+  left: 51px; }
+
+.deliv-home-inpit {
+  position: relative;
+  top: 12px;
+  left: 35px; }
+
+.deliv-corp {
+  position: relative;
+  top: 10px;
+  left: 25px; }
+
+.deliv-corp-input {
+  position: relative;
+  top: 10px;
+  left: 29px; }
+
+.deliv-flat {
+  position: relative;
+  top: 9px;
+  left: 3px; }
+
+.deliv-flat-input {
+  position: relative;
+  top: 12px;
+  left: 15px; }
+
+.deliv-floor {
+  position: relative;
+  top: 9px;
+  left: -7px; }
+  @media screen and (max-width: 480px) {
+    .deliv-floor {
+      display: none; } }
+
+.deliv-floor-input {
+  position: relative;
+  top: 11px;
+  left: -6px; }
+  @media screen and (max-width: 480px) {
+    .deliv-floor-input {
+      display: none; } }
+
+.deliv-text {
+  position: relative;
+  top: 12px;
+  left: -25px; }
+
+.deliv-text-input {
+  position: relative;
+  height: 84px;
+  top: 15px;
+  left: -23px; }
+
+.deliv-money {
+  position: relative;
+  top: 6px;
+  left: -40px; }
+
+.deliv-pay-card {
+  position: relative;
+  left: -50px;
+  top: -88px; }
+
+.deliv-pay-card-radio {
+  position: relative;
+  left: 1px;
+  top: 1px; }
+
+.deliv-no-or-recall {
+  position: relative;
+  left: -42px;
+  top: -1px; }
+  @media screen and (max-width: 768px) {
+    .deliv-no-or-recall {
+      top: -186.8px;
+      left: -69px; } }
+
+.deliv-no-or-recall-check {
+  position: relative;
+  left: 1px;
+  top: 1px; }
+
+.btn-order-reset-1 {
+  position: relative;
+  top: -10px;
+  left: -78px; }
+
+/* Кнопки "Заказать" и "Очистить" */
+/* Кнопка "Заказать" */
+.btn-order-1 {
+  position: relative;
+  top: -10px;
+  left: -58px; }
+
+/* // Кнопка "Заказать" */
+/* Кнопка "Очистить" */
+.reset {
+  color: #fff;
+  font-family: Ubuntu,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  background: transparent; }
+
+.btn-order-reset button {
+  width: 98px;
+  height: 35px;
+  margin-top: 4.8px;
+  margin-left: 134px;
+  font-family: Ubuntu, Arial,  sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 13px;
+  cursor: pointer; }
+
+.btn-order-reset button:hover {
+  color: #e45028;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.btn-order-reset button:active {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+/* // Кнопка "Очистить" */
+/* // Кнопки "Заказать" и "Очистить" */
+/* // Форма */
+/* ------------------------------------------------------------ */

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* Секция 2 - Мы лучшие */
+/* -------------------------------- */
+/* Фон */
+.we-best {
+  background-image: url(../img/bg-we-are-the-best.jpg);
+  height: 100vh;
+  min-height: rem(650px);
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .we-best {
+      height: 122vh; } }
+  @media screen and (max-width: 480px) {
+    .we-best {
+      height: 800px; } }
+
+/* // Фон */
+/* Заголовок секции 2 - Мы лучшие  */
+.we-best-title {
+  color: #2f3234;
+  font-size: 72.06px;
+  padding-top: 137px;
+  margin-bottom: 55px;
+  font-family: 'Gagalin', arial, sans-serif;
+  text-align: center; }
+
+/* // Заголовок секции 2  */
+/* Блоки секции 2 - Мы лучшие  */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row:after {
+  clear: both;
+  /* Очистить потоки обтекниня слева и справа  */
+  content: "";
+  /* Без него не отобразится псевдожлемент after */
+  display: table;
+  /* Для корректного отбражения псевдожлемента after
+                       в современных и старых браузерах */ }
+
+.col-4 {
+  width: 292px;
+  margin-left: 20px;
+  float: left;
+  text-align: center; }
+
+.col-4:last-child {
+  padding-right: 0px; }
+
+.we-best-item__img {
+  margin-bottom: 33px; }
+
+.we-best-item__img-add {
+  margin-bottom: 40px; }
+
+.we-best-item__title {
+  color: #2f3234;
+  margin-bottom: 14px;
+  font-size: 24.12px;
+  font-family: 'Lifehack', Arial, sans-serif; }
+
+.we-best-item__text {
+  color: #626363;
+  font-size: 16px;
+  line-height: 1.4;
+  font-size: 14.01px;
+  font-family: 'Ubuntu', Arial, sans-serif; }
+
+/* // Блоки секции 2 - Мы лучшие  */
+/* // Секция 2 - Мы лучшие */
+/* ------------------------------------------------------------ */

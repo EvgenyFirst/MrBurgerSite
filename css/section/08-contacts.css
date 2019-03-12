@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* Секция 8 - Контакты */
+.contacts-sect {
+  position: relative;
+  background: url(../img/bg-map.jpg) no-repeat 50%;
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .contacts-sect {
+      height: 122.3vh; } }
+  @media screen and (max-width: 480px) {
+    .contacts-sect {
+      height: 148vh; } }
+
+.contacts-on-right a {
+  text-decoration: none;
+  margin-right: rem(5px); }
+
+.contacts-sect img {
+  display: block;
+  max-width: 100%; }
+
+.contacts-on-left-right {
+  position: absolute;
+  background-size: cover;
+  background-color: #000000;
+  background-image: url("../img/bg-footer.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: rem(58px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  left: 0; }
+  @media screen and (max-width: 768px) {
+    .contacts-on-left-right {
+      height: 7vh; } }
+  @media screen and (max-width: 480px) {
+    .contacts-on-left-right {
+      height: 25vh; } }
+
+.contacts-on-left {
+  margin-left: rem(402px);
+  margin-top: rem(1px); }
+  @media screen and (max-width: 768px) {
+    .contacts-on-left {
+      left: -282px;
+      top: 1px;
+      position: relative; } }
+  @media screen and (max-width: 480px) {
+    .contacts-on-left {
+      left: -122px; } }
+
+.contacts-on-right {
+  position: absolute;
+  right: rem(-521px);
+  top: rem(-9px);
+  bottom: rem(-5px);
+  width: 60%;
+  height: rem(100px);
+  text-align: justify;
+  z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .contacts-on-right {
+      left: 722px;
+      top: -4px; } }
+  @media screen and (max-width: 480px) {
+    .contacts-on-right {
+      left: 439px;
+      top: 53px;
+      width: 136px; } }
+
+.contacts-on-right:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.625rem;
+  fill: #595959;
+  width: rem(25px);
+  height: rem(25px);
+  margin-bottom: rem(25px); }
+
+.icon:hover {
+  fill: white;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+
+.icon:first-child {
+  margin-left: 0; }
+
+.title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: cadetblue; }
+
+.contacts-on-right-item {
+  padding-right: rem(20px); }
+
+.contacts-on-left-adress {
+  margin-top: rem(4px);
+  margin-left: rem(80px);
+  font-size: rem(14px);
+  font-family: Ubuntu, Arial,  sans-serif;
+  font-weight: 300; }
+  @media screen and (max-width: 480px) {
+    .contacts-on-left-adress {
+      left: 109px;
+      top: 8px;
+      width: 224px;
+      position: relative; } }
+
+.contacts-on-left-phone {
+  position: absolute;
+  left: rem(481px);
+  bottom: rem(13px); }
+  @media screen and (max-width: 768px) {
+    .contacts-on-left-phone {
+      left: 69px;
+      top: 31px; } }
+  @media screen and (max-width: 480px) {
+    .contacts-on-left-phone {
+      left: 229px;
+      top: 4px;
+      position: relative; } }
+
+.contacts-on-left-number {
+  position: relative;
+  left: rem(100px);
+  top: rem(-13px);
+  color: #e45028;
+  font-size: rem(14px);
+  font-family: Ubuntu, Arial,  sans-serif;
+  font-weight: 400; }
+  @media screen and (max-width: 480px) {
+    .contacts-on-left-number {
+      left: 248px;
+      top: -24px;
+      position: relative; } }
+
+.icon-vk {
+  width: rem(23px);
+  height: rem(13px);
+  position: relative;
+  left: rem(-2px); }
+
+.icon-fb {
+  width: rem(21px);
+  height: rem(21px);
+  position: relative;
+  top: rem(-2px);
+  left: rem(10px); }
+
+.icon-inst {
+  width: rem(21px);
+  height: rem(21px);
+  position: relative;
+  top: rem(-2px);
+  left: rem(19px); }
+
+.icon-tw {
+  width: rem(19px);
+  height: rem(17px);
+  position: relative;
+  top: rem(-2px);
+  left: rem(29px); }
+
+/* ------------------------------------------------------------ */

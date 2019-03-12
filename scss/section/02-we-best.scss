@@ -1,0 +1,186 @@
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+/* -------------------------------- */
+/* Секция 2 - Мы лучшие */
+/* -------------------------------- */
+
+.best {
+  background: url('../img/bg-we-are-the-best.jpg') center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 650px;
+  height: 100vh;
+  padding-bottom: 15%;
+
+  @media screen and (max-width: 768px) {
+    min-height: 750px;
+  }  
+  @media screen and (max-width: 480px) {
+    background: url('../img/bg-we-are-the-best.jpg') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 650px;
+    padding-bottom: 30%;
+  } 
+  @media screen and (max-width: 381px) {
+    height: auto;
+  }
+
+}
+
+.best__wrap {
+  margin-bottom: 125px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 37%;
+  }  
+  @media screen and (max-width: 480px) {
+    margin-bottom: 21%;
+  } 
+  @media screen and (max-height: 667px) 
+  and  (max-width: 768px ) {
+    margin-bottom: 0;
+  }
+  
+}
+
+.best__desc {
+  color: #2f3234;
+
+  @media screen and (max-width: 480px) {
+    text-align: left;
+    margin-left: 6.5%;
+  }  
+
+}
+
+.best__desc-fix {
+  margin-top: -10%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }  
+
+}
+
+.best__title{
+  font-size: 24px;
+  font-family: Lifehack, Arial, sans-serif;
+  line-height: 28px;  
+  margin-bottom: 13px;
+
+  @media screen and (max-width: 480px) {    
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 22px;
+  }
+  @media screen and (max-height: 667px) 
+  and  (max-width: 768px ) {
+    margin-bottom: 0;
+  }
+
+}
+
+.best__list {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding-top: 12%;
+    padding-left: 0;
+  }
+
+}
+
+.best__item {
+  margin: 0 10px;  
+  flex: 1;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 60px;  
+  }
+  // @media screen and (max-width: 381px) {
+  //   margin-bottom: 2%;
+  // }
+
+}
+
+.best__pic {
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+}
+
+.best__icon {
+  max-width: 90px;
+  max-height: 90px;
+  &_green{
+    fill: green;
+  }
+  &_yellow {
+    fill: yellow;
+  }
+  &_red {
+    fill: red;
+  }
+}
+
+.best__dest {
+  line-height: rem(24px);
+  font-size: 14px;
+
+  @media screen and (max-width: 360px) {   
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+}
+
+.best__wrap .section-title {
+  padding-top: 137px;
+  color: #2f3234;
+  font-size: 72.06px;
+  font-family: 'Gagalin', arial, sans-serif;
+
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
+  }
+
+  // @media screen and (max-width: 381px) {
+  //   padding-top: 65px;
+  //   margin-bottom: -9%;
+  // }
+
+}
+
+.best__wrap {
+
+  @media screen and (max-width: 406px) {
+    margin-top: -1%;
+  }
+
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */

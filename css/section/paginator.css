@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* -------------------------------- */
+/* Пагинатор */
+/* -------------------------------- */
+.pagin {
+  position: fixed;
+  width: 16px;
+  height: 170px;
+  top: 100px;
+  right: 30px;
+  z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .pagin {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .pagin {
+      display: none; } }
+
+.pagin__item {
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer; }
+  .pagin__item:last-child {
+    margin-bottom: 0px; }
+  .pagin__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  .pagin__item:hover::before {
+    opacity: 1;
+    width: 16px;
+    height: 16px; }
+
+.pagin__item--active {
+  margin-top: 15px; }
+  .pagin__item--active::before {
+    opacity: 1;
+    width: 16px;
+    height: 16px; }
+
+/* // Пагинатор */
+/* ----------- */
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 1em 0;
+  padding: 0; }
+
+h1, h2, h3, p {
+  margin-bottom: 1em; }
+
+header, #navigation-menu, #content, footer {
+  position: relative; }
+
+header, footer {
+  padding: 1em 3em;
+  text-shadow: none; }
+
+header h1 {
+  color: #e6842c;
+  font-size: 1.4em;
+  font-style: italic; }
+
+nav ul, nav ol, nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#navigation-menu {
+  position: fixed;
+  top: 2em;
+  right: 3em;
+  left: auto;
+  bottom: auto;
+  z-index: 9;
+  text-shadow: none;
+  font-size: 0.85em;
+  width: 2%; }
+  @media only screen and (max-width: 1625px) {
+    #navigation-menu {
+      width: 2%; } }
+  @media only screen and (max-width: 1575px) {
+    #navigation-menu {
+      width: 2.1%; } }
+  @media only screen and (max-width: 1500px) {
+    #navigation-menu {
+      width: 2.2%; } }
+  @media only screen and (max-width: 1432px) {
+    #navigation-menu {
+      width: 2.3%; } }
+  @media only screen and (max-width: 1370px) {
+    #navigation-menu {
+      width: 2.4%; } }
+  @media only screen and (max-width: 1313px) {
+    #navigation-menu {
+      width: 2.5%; } }
+  @media only screen and (max-width: 1260px) {
+    #navigation-menu {
+      width: 2.6%; } }
+  @media only screen and (max-width: 1212px) {
+    #navigation-menu {
+      width: 2.7%; } }
+  @media only screen and (max-width: 1212px) {
+    #navigation-menu {
+      top: 15%; } }
+  @media only screen and (max-width: 1165px) {
+    #navigation-menu {
+      width: 2.8%; } }
+  @media only screen and (max-width: 1161px) {
+    #navigation-menu {
+      width: 2.9%; } }
+  @media only screen and (max-width: 932px) {
+    #navigation-menu {
+      width: 3%; } }
+  @media only screen and (max-width: 901px) {
+    #navigation-menu {
+      width: 3.1%; } }
+  @media only screen and (max-width: 869px) {
+    #navigation-menu {
+      width: 3.2%; } }
+  @media only screen and (max-width: 842px) {
+    #navigation-menu {
+      width: 3.3%; } }
+  @media only screen and (max-width: 819px) {
+    #navigation-menu {
+      width: 3.4%; } }
+  @media only screen and (max-width: 795px) {
+    #navigation-menu {
+      width: 3.5%; } }
+  @media only screen and (max-width: 772px) {
+    #navigation-menu {
+      width: 3.6%; } }
+  @media only screen and (max-width: 768px) {
+    #navigation-menu {
+      display: none; } }
+
+#navigation-menu ul {
+  overflow: hidden;
+  border-radius: 5px; }
+
+#navigation-menu li {
+  margin: 3px; }
+
+#navigation-menu a {
+  display: block;
+  padding: 0.2em 0.6em; }
+
+#navigation-menu a:hover,
+#navigation-menu a.mPS2id-highlight {
+  width: 6px;
+  border-radius: 50%;
+  border: white solid 1px; }
+
+.content {
+  padding: 1em 3em; }
+
+.content hr + a,
+.content hr + a + a {
+  margin-right: 2em; }
+
+.ie8 .mPS2id-target .content h2:first-child:after {
+  font-size: 0.95em; }
+
+header, .content, footer {
+  padding-right: 150px; }
+
+.horizontal-layout {
+  width: 700%; }
+
+.horizontal-layout header h1 {
+  display: none; }
+
+.horizontal-layout #navigation-menu {
+  right: auto;
+  left: 3em;
+  top: 4em; }
+
+.horizontal-layout #content {
+  overflow: hidden; }
+
+.horizontal-layout .content h2 {
+  position: relative;
+  padding-bottom: 50px; }
+
+.horizontal-layout .content h2 + p {
+  margin-top: -50px; }
+
+.horizontal-layout .mPS2id-target .content h2:first-child:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  margin-left: 0; }
+
+.horizontal-layout header > *, .horizontal-layout footer > * {
+  width: 10%; }
+
+.horizontal-layout header, .horizontal-layout .content, .horizontal-layout footer {
+  padding-left: 150px;
+  padding-right: 3em; }
+
+.auto-layout {
+  width: 6200px;
+  height: 6200px; }
+
+.auto-layout header h1 {
+  margin-left: 150px; }
+
+.auto-layout #navigation-menu {
+  right: auto;
+  left: 2em; }
+
+.auto-layout #content {
+  height: 100%; }
+
+.auto-layout #content section {
+  position: absolute;
+  min-height: 600px;
+  width: 600px;
+  top: 0;
+  left: 0;
+  margin-left: 3em;
+  border-radius: 5px; }
+
+.auto-layout .content {
+  padding-left: 150px;
+  padding-right: 3em; }
+
+@media only screen and (min-width: 1140px) {
+  header, .content, footer,
+  .horizontal-layout header,
+  .horizontal-layout .content,
+  .horizontal-layout footer,
+  .auto-layout .content {
+    padding-right: 3em;
+    padding-left: 3em; }
+  .horizontal-layout header h1 {
+    display: block; }
+  .auto-layout header h1 {
+    margin-left: 0; }
+  #navigation-menu {
+    font-size: 1em;
+    top: 23%; }
+  .horizontal-layout #navigation-menu,
+  .auto-layout #navigation-menu {
+    right: 3em;
+    left: auto;
+    top: 1.55em; }
+  #navigation-menu ul {
+    border-radius: 17px; }
+  #navigation-menu li {
+    float: left;
+    margin: 3px 5px; }
+  #navigation-menu a {
+    border-radius: 50px; } }
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */

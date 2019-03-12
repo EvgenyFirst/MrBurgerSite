@@ -1,0 +1,547 @@
+@font-face {
+    font-family: Lifehack; /* Имя шрифта */
+    src: url(../fonts/Lifehack-Medium.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Gagalin; /* Имя шрифта */
+    src: url(../fonts/Gagalin-Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Ubuntu; /* Имя шрифта */
+    src: url(../fonts/Ubuntu-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Ubuntu-Light; /* Имя шрифта */
+    src: url(../fonts/Ubuntu-Light.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Ubuntu-Medium; /* Имя шрифта */
+    src: url(../Ubuntu-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    width: 935px;
+}
+
+.hide-style {
+    list-style: none;    
+}
+.hide-underline {
+    text-decoration: none;
+}
+.hide-display {
+    display: none;
+}
+
+/* Секция 1 - Мы делаем натуральные бургеры */
+.we-do-it {
+    background-size: cover;
+    min-height: 650px;
+    background-color: #000000;
+    background-image: url("../img/bg-we-do.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.main-menu a,
+.paginator a,
+.go-down a {
+    color: white;    
+}
+
+.logo-nav {
+    width: 970px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 70px;
+    display: flex;
+}
+
+.logo {
+    width: 92px;
+    height: 69px;
+    margin-right: 0;
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 23px;
+    padding-bottom: 0;
+}
+/* Навигация */
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 538px;
+    font-size: 13px;
+    padding-top: 24px;
+    padding-right: 4px;
+    padding-left: 24px;
+    margin-left: 170px;
+}
+
+.about {
+    color: white;
+    width: 39px;
+    padding-right: 16px;
+    text-shadow: 1px 1px 2px white;
+}
+.about-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.about-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+.dot-aft-about {
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.burgers {
+    padding-right: 16px;
+    padding-left: 15px;
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.burgers-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.burgers-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+.dot-aft-burg {
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.team {
+    padding-right: 16px;
+    padding-left: 16px;
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.team-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.team-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+.dot-aft-team {
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.menu {
+    padding-right: 16px;
+    padding-left: 16px;
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.menu-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.menu-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+.dot-aft-menu {
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.review {
+    padding-right: 16px;
+    padding-left: 15px;
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.review-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.review-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+.dot-aft-review {
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.contacts {
+    padding-left: 17px;
+    position: relative;
+    text-shadow: 1px 1px 2px white;
+}
+.contacts-link:hover {
+    color: rgb( 228, 80, 40 );   
+    transition: 1s;
+}
+.contacts-link:active {
+    color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+
+/* Заказать */
+.btn-order button {
+    cursor: pointer;
+    font-family: Ubuntu, Arial,  sans-serif;
+    width: 98px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb( 228, 80, 40 );
+    border: 0;
+    font-size: 13px;
+    margin-top: 29px;
+    margin-left: 10px;
+}  
+.btn-order button:hover {
+    background-color: rgb( 193, 64, 30 );   
+    transition: 1s;
+}
+
+/* Бургер и ,,мы делаем,, */
+.burgers-we-do {
+    width: 914px;
+    height: 430px;
+    margin-left: 55px;
+    margin-right: 107px;
+    margin-top: 33px;
+    padding: 0;
+   
+}
+.burgers-we-do img {
+    display: flex;
+    padding: 0;
+    margin: 0px;
+    width: 451px;
+    height: 424px;
+}
+.burgers-we-do__text {
+    width: 416px;
+    margin-left: 510px;
+    position: relative;
+    bottom: 260px;
+}
+.burgers-we-do__text p:first-child {
+    margin: 0 0;
+    font-family: Gagalin, Arial,  sans-serif;
+    color: #f9b43b;
+    width: 398px;
+    height: 83px;
+    font-size: 72px;
+    text-align: center;
+}
+.burgers-we-do__text p:last-child {
+    margin-top: 0px;
+    font-family: Lifehack, Arial,  sans-serif;
+    width: 415px;
+    height: 126px;
+    font-size: 65px;
+    line-height: 61px;
+    text-align: justify;
+}
+
+/* Стрелка вниз */
+.go-down {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 535px;
+    padding: 5px;
+}
+
+/* Пагинатор */
+.pagin {
+    position: fixed;
+    width: 16px;
+    height: 170px;
+    right: 454px;
+    bottom: 643px;
+}
+.pagin__item {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.pagin__item:last-child {
+    margin-bottom: 0;
+}
+.pagin__item:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.pagin__item--active:before {
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+.pagin__item:hover:before {
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+
+/* Секция 2 - Му лучшие */
+.we-best {
+    min-height: 650px;
+    background-color: #000000;
+    background-image: url("../img/bg-we-are-the-best.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.we-best-sect {
+    width: 1066px;
+    height: 613px;
+    position: relative;
+    top: 130px;
+}
+.we-best-sect__the-best p {
+    width: 500px;
+    font-size: 71.713px;
+    font-family: Gagalin, Arial,  sans-serif;
+    color: rgb( 47, 50, 52 );
+    margin: 0px;
+    margin-left: 319px;
+}
+
+/* Свежее мясо */
+.we-best-sect__meat-text {
+    width: 330px;
+    height: 280px;
+    padding: 0;
+    margin-top: 74px;
+    margin-left: 42px;
+}
+.we-best-sect__meat-text img {
+    width: 100px;
+    height: 98px;
+    margin-top: 2px;
+    margin-left: 120px;
+    text-shadow: 1px 1px 2px red;
+}
+.we-best-sect__good-meat {
+    width: 295px;
+    height: 37px;
+    margin-top: 14px;
+    margin-left: 17px;
+}
+.we-best-sect__meat-text p:nth-child(2) {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+    font-size: 24.12px;
+    font-family: Lifehack, Arial,  sans-serif;
+    color: rgb( 47, 50, 52 );
+    margin-top: 13px;
+    margin-left: 48px;
+    text-align: center;
+}
+.we-best-sect__meat-text p:nth-child(3) {
+    width: 340px;
+    font-family: Ubuntu-Light;
+    color: #7e7c7c;
+    line-height: 1.7;
+    margin-top: 24px;
+    color: rgba( 47, 50, 52, 0.8 );
+    text-align: center;
+}
+
+/* Ручная сборка */
+.we-best-sect__hand-text { 
+    width: 330px;
+    height: 280px;
+    padding: 0;
+    margin-top: 74px;
+    margin-left: 42px;
+    
+    /*
+        width: 330px;
+        height: 280px;
+        display: flex;
+        flex-direction: row;
+    */
+}
+.we-best-sect__hand-text img {
+    width: 100px;
+    height: 98px;
+    margin-top: 5px;
+    margin-left: 114px;
+    text-shadow: 1px 1px 2px yellow;
+}
+.we-best-sect__hand-text p:nth-child(2) {
+    font-family: Lifehack, Arial,  sans-serif; 
+    font-size: 24.12px;
+    color: rgb( 47, 50, 52 );
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.we-best-sect__hand-text p:nth-child(3) {
+    width: 340px;
+    font-family: Ubuntu-Light;
+    color: #7e7c7c;
+    line-height: 1.7;
+    text-align: center;
+    margin-left: 10px;
+    color: rgba( 47, 50, 52, 0.8 );
+}
+
+/* Натуральные ингридиенты */
+ .we-best-sect__list-text {
+    width: 330px;
+    height: 280px;
+    margin-top: 90px;
+    margin-left: 42px;
+     
+    /*
+        width: 330px;
+        height: 280px;
+        padding: 0; 
+    */
+}
+.we-best-sect__list-text img {  
+    text-shadow: 1px 1px 2px green;
+    margin-left: 90px;
+}
+.we-best-sect__list-text p:nth-child(2) {
+    width: 150px;
+    font-family: Lifehack, Arial,  sans-serif;
+    line-height: 1.2;
+    color: rgb( 47, 50, 52 );
+    font-size: 24.12px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 70px;
+    margin-bottom: 0;
+}
+.we-best-sect__list-text p:nth-child(3) {
+    font-family: Ubuntu-Light;
+    color: #7e7c7c;
+    line-height: 1.7;
+    width: 330px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Секция 6 - Отзывы */
+/* Секция 6 - Отзывы - Первая четверка */
+
+
+.reviews-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviews-1__item {
+    width: 25%;
+    position: relative;
+    height: 560px;
+}
+.reviews-1__item img {
+    width: 100%;
+    height: auto;
+}
+.reviews-1__item--hover {
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 560px;
+    position: relative;
+    bottom: 580px;
+    background-color: #515151;
+    opacity: 0;
+}
+.reviews-1__item--hover:hover {
+    transition: 0.6s;
+    opacity: 0.5;
+}
+.reviews-1__item--hover p:first-child {
+    font-family: Ubuntu-Medium;
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+.reviews-1__item--hover p:nth-child(2) {
+    font-family: Ubuntu-light;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    top: 105px;
+    left: 30px;
+}
+.reviews-1__item--hover button:nth-child(3) {
+    cursor: pointer;
+    font-family: Ubuntu-Medium;
+    width: 110px;
+    height: 34px;
+    color: white;
+    background-color: #000000;
+    border: 0;
+    opacity: 0.4;
+    border-radius: 5px;
+    font-size: 13px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+.reviews-1__item--hover button:nth-child(3):hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+/* Секция 6 - Отзывы - Вторая четверка */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.reviews__item {
+    width: 25%;
+    height: 0;
+    position: relative;   
+}
+.reviews__item img {
+    width: 100%;
+    height: auto;
+}
+

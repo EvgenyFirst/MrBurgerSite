@@ -1,0 +1,191 @@
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+/* -------------------------------- */
+/* Секция 8 - Контакты */
+/* -------------------------------- */
+
+.map {
+  //margin-top: -1px;
+  //width: 100vw;
+  //height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  background: url("../img/bg-footer.jpg") center no-repeat;
+  background-size: cover;
+  //position: relative;
+}
+
+.contacts {
+  position: absolute;
+}
+
+.map-1 {
+  height: 100%;
+  width: 100vw;
+}
+.maps {
+  height: 87%;
+  padding-bottom: 20%; 
+  z-index: 1;
+}
+
+.footer {
+  background: url("../img/bg-footer.jpg") center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 13%;
+
+  
+  @media screen and (max-width: 572px) {
+    height: 79px;
+  }
+  @media screen and (max-width: 572px) {
+    height: 70px;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding-left: 0;
+    margin-left: -38%;
+  }
+  @media screen and (max-width: 459px) {
+    padding-left: 30%;
+    margin-left: -105px;
+  }
+  @media screen and (max-width: 452px) {
+    padding-left: 7%;
+  }
+  @media screen and (max-width: 452px) {
+    padding-left: 18%;
+  }
+  @media screen and (max-width: 380px) {
+    padding-left: 31%;
+  }
+  @media screen and (max-width: 350px) {
+    padding-left: 45%;
+  }
+  @media screen and (max-width: 320px) {
+    padding-left: 59%;
+  }
+
+}
+
+
+.footer__col {
+  padding: 15px 0;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 5px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 154px;
+    text-align: center;
+    padding: 9px 0;
+    line-height: 25px;
+  }
+  @media screen and (max-width: 572px) {
+    width: 154px;
+  }
+}
+
+.footer__address {
+  color: #ffffff;
+  font-size: 14px;
+
+  @media screen and (max-width: 572px) {
+    width: 166px;
+  }
+  @media screen and (max-width: 572px) {
+    width: 307px;
+  }
+ }
+
+.footer__phone {
+  color: #e45028;
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.footer__phone-icon {
+  width: 10px;
+  height: 10px;
+  fill: red;
+}
+
+.footer__col_right {
+  text-align: right;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 572px) {
+    padding-left: 27%;
+    padding-top: 9%;
+  }
+  @media screen and (max-width: 458px) {
+    margin-right: -83%;
+  }
+  @media screen and (max-width: 480px) {
+    margin-right: -197%;
+    margin-top: -65%;
+    padding-bottom: 11%;
+  }
+  @media screen and (max-width: 320px) {
+    margin-right: -219%;
+  }
+
+}
+
+.socials {
+  position: relative;
+  top: 50%;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin-left: -20px;
+  }
+
+}
+
+.socials__item {
+  margin-left: 20px;
+}
+
+.socials__link {
+  display: inline-block;
+  max-width: 23px;
+  max-height: 20px;
+  opacity: .3;
+  transition: .3s;
+  
+    &:hover {
+      opacity: 1;
+    }
+
+}
+  // .socials__link:hover {
+  //   opacity: 1;
+  // }
+
+.socials__link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */

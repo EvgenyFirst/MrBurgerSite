@@ -1,0 +1,124 @@
+
+
+/*#contorl {
+   height: 200px;
+   width: 40px;
+   right: 0;
+   top: 50%;
+   margin-top: -100px;
+   z-index: 9;
+   position: fixed;
+}*/
+
+#contorl span {
+   display: block;
+   border-radius: 50%;
+   margin: 15px 10px;
+   cursor: pointer;
+   color: white;
+}
+
+#contorl span.on::before {
+   opacity: 1;
+   width: 16px;
+   height: 16px;
+}
+
+#box {
+   height: auto;
+}
+.disp-x {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------ */
+
+/* -------------------------------- */
+/* Пагинатор */
+/* -------------------------------- */
+.pagin-on {
+  @media screen and (max-width: 768px) {
+    display: block;      
+  }
+}
+#contorl  {
+   position: fixed;
+   width: 16px;
+   height: 170px;
+   top: 100px;
+   right: 30px;
+   z-index: 2;
+ 
+     @media screen and (max-width: 768px) {
+       display: none;      
+     }
+ 
+     @media screen and (max-width: 480px) {
+       display: none;  
+     }
+     
+   }
+   #contor2  {
+    position: fixed;
+    width: 16px;
+    height: 170px;
+    top: 100px;
+    right: 30px;
+    z-index: 2;
+  
+      @media screen and (max-width: 768px) {
+        display: none;      
+      }
+  
+      @media screen and (max-width: 480px) {
+        display: none;  
+      }
+      
+    }
+ 
+ .pagin__item {
+   display: block;
+   position: relative;
+   width: 6px;
+   height: 6px;
+   background: white;
+   border-radius: 50%;
+   margin-bottom: 15px;
+   cursor: pointer;
+ }
+ 
+ .pagin__item:last-child {
+   margin-bottom: 0px;
+ }
+ 
+ .pagin__item:before {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border: 1px solid white;
+   border-radius: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+   transition: all .2s;
+ }
+ 
+ .pagin__item--active:before {
+   opacity: 1;
+   width: 16px;
+   height: 16px;
+ }
+ 
+ .pagin__item:hover:before {
+   opacity: 1;
+   width: 16px;
+   height: 16px;
+ }
+ 
+ /* // Пагинатор */
+ /* ------------------------------------------------------------ */
+ 

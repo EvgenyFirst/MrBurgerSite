@@ -1,1 +1,3 @@
-# MrBurgerSite
+﻿Проект в LoftSchool SiteMrBurger.
+Студент Евгений Чиликов.
+Наставник Андрей Лейкин.
