@@ -96,7 +96,7 @@ mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-
 
 <!--
 
-$recepient = "chilicklic@mail.ru";
+$recepient = "";
 $siteName = "HTML-шаблон";
 
 $name = trim($_POST["name"]);
